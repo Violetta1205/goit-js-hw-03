@@ -1,12 +1,34 @@
+// 
+
+// =======================     Перший варіант   =================================
+
+
+// function filterArray(numbers, value){
+// let newNumbers = [];
+// for (let i = 0; i < numbers.length; i += 1){
+//     if (numbers[i] > value){
+//         newNumbers.push(numbers[i]);
+//             }
+// }
+//     return newNumbers; 
+// }
+
+// =======================     Другий варіант   =================================
+
+
+
 function filterArray(numbers, value){
-let newNumbers = [];
-for (let i = 0; i < numbers.length; i += 1){
-    if (numbers[i] > value){
-        newNumbers.push(numbers[i]);
-            }
+    let newNumbers = [];
+    for (const element of numbers){
+        if (element > value){
+            newNumbers.push(element);
+        }
+    }
+    return newNumbers;  
 }
-    return newNumbers; 
-}
+
+
+
 
 
 
